@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="heading-sec">
+            <div class="intro-text glass-bg">
+                <h1>Random Password Generator</h1>
+            </div>
+        </div>
+        <div class="box-main">
+            <div class="box glass-bg">
+                <p><span id="pass-box">Select Option & Click Generate</span></p>
+                <div class="row">
+                    <div class="heading-side">
+                        <p>Password Length</p>
+                    </div>
+                    <div class="input-field">
+                        <input class="number-field-size" type="number" value="8" id="total-char" max="30" min="2"
+                            oninput="limitInput()">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="heading-side">
+                        <label for="upper-case">
+                            <p>Contains Uppercase</p>
+                        </label>
+                    </div>
+                    <div class="input-field">
+                        <input class="largerCheckbox" type="checkbox" name="" id="upper-case">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="heading-side">
+                        <label for="lower-case">
+                            <p>Contains Lowercase</p>
+                        </label>
+                    </div>
+                    <div class="input-field">
+                        <input class="largerCheckbox" type="checkbox" name="" id="lower-case">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="heading-side">
+                        <label for="symbols">
+                            <p>Contains symbols</p>
+                        </label>
+                    </div>
+                    <div class="input-field">
+                        <input class="largerCheckbox" type="checkbox" name="" id="symbols">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="heading-side">
+                        <label for="numbers">
+                            <p>Contains Numbers</p>
+                        </label>
+                    </div>
+                    <div class="input-field">
+                        <input class="largerCheckbox" type="checkbox" name="" id="numbers">
+                    </div>
+                </div>
+                <div class="row">
+                    <button id="generate-btn" class="button">Generate <i class="fa-solid fa-rotate fa-xs"></i></button>
+                    <button id="copy-btn" class="button-2">Copy <i class="fa-solid fa-copy fa-xs"></i></button>
+
+                </div>
+                <div class="copied-box">
+                    <p class="copied-text-line"><span id="copied-password">
+                        </span></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-sec">
+            <div class="glass-bg footer-text">
+                <p>&#169; Created by <a href="https://imyashgogia.netlify.app/">@Yash Gogia</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

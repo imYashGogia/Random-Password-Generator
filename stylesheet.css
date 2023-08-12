@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+.main {
+  background: rgb(21, 78, 219);
+  background: linear-gradient(
+    90deg,
+    rgba(21, 78, 219, 1) 8%,
+    rgba(115, 204, 237, 1) 49%,
+    rgba(21, 78, 219, 1) 97%
+  );
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  text-align: center;
+}
+.heading-sec {
+  padding: 3rem 0 2rem 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+}
+.glass-bg {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.intro-text {
+  padding: 1rem;
+  margin: 0.7rem;
+}
+.box-main {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+#pass-box {
+  width: 100%;
+  background-color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.box {
+  min-width: 350px;
+  padding: 20px 10px;
+  border-radius: 20px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 15px;
+  font-size: 1.3rem;
+}
+.heading-side p {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  cursor: pointer;
+}
+.button {
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  border: 0;
+  background-color: #154edb;
+  color: white;
+  cursor: pointer;
+}
+.button-2 {
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  border: 0;
+  background-color: white;
+  color: #154edb;
+  cursor: pointer;
+}
+
+input.largerCheckbox {
+  width: 20px;
+  height: 20px;
+}
+input.number-field-size {
+  width: 70px;
+  height: 30px;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.copied-box {
+  display: flex;
+  justify-content: center;
+}
+.copied-text-line {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer-sec {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+}
+.footer-text {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+}
+.footer-text a {
+  text-decoration: none;
+  color: blue;
+}
+.footer-text a:hover {
+  color: white;
+}
